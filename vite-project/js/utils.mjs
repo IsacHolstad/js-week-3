@@ -1,6 +1,6 @@
 function formatCurrency(amount, currencySymbol = 'NOK'){
-    const formattedAmount = amount.toFixed(2);
-    return `${formattedAmount} ${currencySymbol}`;
+   //const formattedAmount = amount.toFixed(2);
+    //return `${formattedAmount} ${currencySymbol}`;
 
 }
 

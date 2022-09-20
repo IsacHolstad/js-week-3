@@ -38,7 +38,7 @@ const itemsPriceWithTax = calculateTax(itemPrice, tax);
 console.log("item with tax: ", itemsPriceWithTax);
 
 const formatedItemWithTax = formatCurrency(itemsPriceWithTax);
-console.log(formatedItemWithTax);
+console.log("undefined beacuse it wont read  toFixed(): ", formatedItemWithTax);
 
 
 
