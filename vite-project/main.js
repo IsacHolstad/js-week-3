@@ -1,6 +1,13 @@
-import './style.css'
+import './style.css';
 
-import "../moduels/js/actions.mjs"
-import {showMessage} from "../moduels/js/actions.mjs";
+import {showMessage}  from "./js/actions.mjs";
 
-showMessage("jeelo there user");
+
+showMessage()
+
+import {functionFour} from "./js/actions.mjs";
+
+functionFour();
+
+import {passTheBall} from "./js/team.mjs";
+passTheBall()
