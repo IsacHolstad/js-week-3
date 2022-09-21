@@ -113,9 +113,19 @@ const container = document.querySelector(".statusmessage");
 
 
 const cryptoList = document.querySelector(".crypto-container")
+let loading = true
 fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
     .then((response) => response.json())
     .then((json) => console.log(json))
+    .catch((error) =>{
+        console.log(error)
+        console.log("error happening")
+    })
+    .finally(() =>{
+        loading = false
+        cryptoList.innerHTML = `<h2>loaded crypto in console</h2>`
+
+    })
 
 
 
