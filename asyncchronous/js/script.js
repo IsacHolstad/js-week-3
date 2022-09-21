@@ -97,15 +97,20 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then((response) => response.json())
     // Data is now available as
     .then((json) => console.log(json))
-     //
+    //
     .catch((error) => {
-        console.log('An error has been thrown');
         console.log(error);
 
     })
-    .finally(
-       isLoading = false
-    );
+    .finally(() =>{
+        isLoading = false
+
+
+    });
+
+const container = document.querySelector(".statusmessage");
+
+
 
 
 
