@@ -104,12 +104,18 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
     })
     .finally(() =>{
         isLoading = false
+        container.innerHTML = `<h1>succeses</h1> `
 
 
     });
 
 const container = document.querySelector(".statusmessage");
 
+
+const cryptoList = document.querySelector(".crypto-container")
+fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json))
 
 
 
