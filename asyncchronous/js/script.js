@@ -61,11 +61,12 @@ const newValues = values.filter((value) =>{
     if (value > 10) {
         return true
     }
-    else {
-        return  false
-    }
+
 })
-console.log("new values: " ,newValues)
+console.log("new values: " ,newValues);
+
+//const newValues = values.filter(isBiggerThan10);
+//console.log(newValues)
 
 
 
