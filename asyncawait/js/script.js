@@ -43,3 +43,21 @@ main();
 (function ()  {
     console.log("helo")
 })();
+
+
+const APIurl = "api.coincap.io/v2/assets/"
+const proxy = "https://noroffcors.herokuapp.com/";
+const corsFixUrl = proxy + APIurl;
+
+(async function cryptoNames() {
+        try{
+            const response = await fetch(corsFixUrl);
+            const responseJSON = await response.json(); // convert the response to json data
+            const cryptoData = responseJSON.data;
+            console.log(cryptoData)
+        }
+        catch(error) {
+            console.log(error)
+        }
+    }
+)();
