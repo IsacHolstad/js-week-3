@@ -54,10 +54,13 @@ const corsFixUrl = proxy + APIurl;
             const response = await fetch(corsFixUrl);
             const responseJSON = await response.json(); // convert the response to json data
             const cryptoData = responseJSON.data;
-            console.log(cryptoData)
+            console.log(cryptoData);
+            for (let i = 0; i < cryptoData.length; i++){
+                console.log(cryptoData[i].id);
+            }
         }
         catch(error) {
-            console.log(error)
+            console.log(error);
         }
     }
 )();
