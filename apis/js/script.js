@@ -17,4 +17,4 @@ fetch("https://reqres.in/api/users", fetchOptions)
     })
     // .then(res => res.json())
     .then(jsonResponse => console.log(jsonResponse))
-    .catch(err => console.log(err))
+    .catch(err => console.log(err));
