@@ -1,8 +1,11 @@
 //fetch("", {})
+let fetchOptions ={  method:"POST", headers:{
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({name: "Isac"})
+}
 
-
-console.log(fetch("https://reqres.in/api/users"));
-fetch("https://reqres.in/api/users")
+fetch("https://reqres.in/api/users", fetchOptions)
     // .then(res => console.log(res))
     .then(res => {
         if (res.ok) {
@@ -13,5 +16,5 @@ fetch("https://reqres.in/api/users")
         }
     })
     // .then(res => res.json())
-    .then(jsonResponse => console.log(jsonResponse.data))
+    .then(jsonResponse => console.log(jsonResponse))
     .catch(err => console.log(err))
