@@ -16,7 +16,7 @@
 //
 //}
 //getData();
-
+const container = document.querySelector(".container")
 
 // problems with api
 async function doFetch(url) {
@@ -41,26 +41,32 @@ main();
 
 // function that calls itself
 (function ()  {
-    console.log("helo")
+    console.log("helo this is an function that calls itself")
 })();
 
 
-const APIurl = "api.coincap.io/v2/assets/"
+const apiUrl = "api.coincap.io/v2/assets/"
 const proxy = "https://noroffcors.herokuapp.com/";
-const corsFixUrl = proxy + APIurl;
+const corsFixUrl = proxy + apiUrl;
 
 (async function cryptoNames() {
         try{
             const response = await fetch(corsFixUrl);
-            const responseJSON = await response.json(); // convert the response to json data
+            const responseJSON = await response.json();
             const cryptoData = responseJSON.data;
-            console.log(cryptoData);
             for (let i = 0; i < cryptoData.length; i++){
                 console.log(cryptoData[i].id);
+                if (i >= 20) {
+                    return true
+                }
+                container.innerHTML = `<h1>${cryptoData[i].id}</h1>`
             }
         }
         catch(error) {
             console.log(error);
+            container.innerHTML = `<h1>error</h1>`
         }
     }
 )();
+
+
