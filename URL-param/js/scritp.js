@@ -12,12 +12,18 @@ const lastName = "Musk";
 
 //newLink.href = `https://www.example.com/?firatName=${firstName}&lastName=${lastName}`;
 
-container.innerHTML += `<a href="https://www.example.com/?firatName=${firstName}&lastName=${lastName}">Submit</a>`
+container.innerHTML += `<a href="https://www.example.com/?firatName=${firstName}&lastName=${lastName}" class="button">Submit</a>`
 
 console.log(window);
 console.log(window.location);
 console.log(window.location.search);
 
+//making new url search parameter
+
 const parametersString = window.location.search;
 const searchParams = new URLSearchParams(parametersString);
 console.log(searchParams);
+
+//for(const param of parametersString){
+//    console.log(param)
+//}
