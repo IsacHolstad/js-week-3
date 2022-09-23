@@ -1,4 +1,4 @@
-form{
+form {
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -7,14 +7,16 @@ form{
     border-radius: 18px;
 
 }
-input{
+
+input {
     margin: 5px;
     border: 0.8px solid blue;
     border-radius: 8px;
     width: 200px;
 
 }
-.submit-button{
+
+.submit-button {
     width: 80px;
     margin: 0 auto;
     margin-top: 5px;
