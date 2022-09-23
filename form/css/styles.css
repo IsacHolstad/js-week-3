@@ -11,8 +11,9 @@ form {
 input {
     margin: 5px;
     border: 0.8px solid blue;
-    border-radius: 8px;
-    width: 200px;
+    border-radius: 12px;
+    width: 250px;
+    height: 25px;
 
 }
 
@@ -24,4 +25,5 @@ input {
     border: 0.8px solid black;
     border-radius: 8px;
     margin-bottom: 5px;
+    height: 25px;
 }
