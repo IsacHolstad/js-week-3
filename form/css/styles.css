@@ -5,11 +5,13 @@ form{
     border: 2px solid gray;
     text-align: center;
     border-radius: 18px;
+
 }
 input{
     margin: 5px;
     border: 0.8px solid blue;
     border-radius: 8px;
+    width: 200px;
 
 }
 .submit-button{
@@ -19,4 +21,5 @@ input{
     background-color: transparent;
     border: 0.8px solid black;
     border-radius: 8px;
+    margin-bottom: 5px;
 }
